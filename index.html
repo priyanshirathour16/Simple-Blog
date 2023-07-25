@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title> Blogging Platform </title>
+</head>
+
+<body class="index-body">
+  <header>
+    <div class="navigation">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <img src="https://cdn-icons-png.flaticon.com/512/60/60736.png">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Content
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Reading List</a></li>
+                  <li><a class="dropdown-item" href="#">Podcasts</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" style="text-align: end; " class="form-form">
+              <input class="form-control me-2" type="search" class="form-search"
+                style="width: 350px; margin-left: 50%; " placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+  <main>
+
+    <!-- ============== main content ================ -->
+  <div id="whole-content-body">
+    <div class="content">
+      <div class="content-left">
+        <h3> The Heaven For The Blogger</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis illo, expedita minima aliquid ipsum
+          officia dolor tempora quis nobis distinctio. A, amet eum natus et sit beatae odit! Nihil, corporis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium vero id animi voluptas corporis rem
+          saepe mollitia deleniti. Dolor nesciunt, nihil consequatur ullam facilis laboriosam veritatis eius!
+          Dignissimos, deleniti voluptas?</p>
+        <div class="comment-like">
+         <!-- ========================== start=========================== -->
+         <div class="content-bottom">
+          <p><i class="fa-solid fa-comment" data-toggle="modal" data-target="#myModal"></i><i class="fa-solid fa-heart" id="like"></i></p>
+
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                  <h4 class="modal-title">write your comment here </h4>
+                  <button type="button" class="close btn-bnd" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <!-- ============star body============== -->
+                  <div class="modal-form">
+                   
+                    <label >Name</label>
+                    <input type="text" class = "text" name="name" id="name" value="">
+                    <br>
+                    <label >Comment</label>
+                    <textarea placeholder="write comment" id="comment" ></textarea>
+                    <div class="modal-footer">
+                      <button type="submit" onclick="submithandler()" class="btn btn-default" data-dismiss="modal">submit</button>
+                    </div>
+                    
+                  </div>
+                  
+                  <!-- ==================end body ============== -->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- =========================== end ============================ -->
+        </div>
+        <div id="data"> 12-03-56  02:67 PM</div>
+      </div>
+      <div class="content-right">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLWjkkgsnd7rkl1TNGTlTgzAxIoX7gxocpMTNWgcaEmYZjb82NNiQXU99HcaeMTLXbN6I&usqp=CAU"
+          alt="image" />
+      </div>
+    </div>
+
+    <!-- ========================= user comment ================================= -->
+    <div id="content-add-list">
+      <div class="content-add">
+        <div class="content-top">
+          <img
+            src="data:image/png;base64,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"
+            alt="" />
+          <span>bell john</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo numquam aliquam tempore incidunt doloremque
+            veritatis! Nihil sunt perspiciatis culpa tempore nam consequatur repellat voluptas unde rerum facilis! Nemo,
+            velit minus.</p>  
+        </div>
+        <div class="content-bottom">
+          <p><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash" onclick="deleteHandler()"></i> <i class="fa-solid fa-heart" id="like"></i></p>
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                  <h4 class="modal-title">write your comment here </h4>
+                  <button type="button" class="close btn-bnd" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <!-- ============star body============== -->
+                  <div class="modal-form">
+                    <label >Name</label>
+                    <input type="text" class = "text" name="name">
+                         <br>
+                    <label >Comment</label>
+                    <textarea placeholder="write comment"></textarea>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-default" data-dismiss="modal">submit</button>
+                    </div>
+                  </div>
+                  <!-- ==================end body ============== -->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="conn">
+          12-04-2005 13:07:45
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    
+</body>
+
+</html>

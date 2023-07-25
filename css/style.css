@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 1px;
+
+    
+}
+.index-body{
+    background-color: rgb(248, 248, 248);
+}
+
+/* ======================== navigation ================================== */
+.navigation{
+    margin: auto;
+    width: 80vw;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+img{
+    width:4%;
+}
+.content{
+    width: 80vw;
+    margin: auto;
+    /* background-color: blue; */
+
+}
+.footer-1{
+    height: 40px;
+    background-color: yellow;
+}
+.modal-form{
+    background-color: rgb(72, 210, 210);
+    padding: 20px;
+    /* padding-right: 50px; */
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    border-radius: 5px ;
+}
+.modal-form label{
+    display: flex;
+    justify-content: flex-start;
+}
+.modal-form input{
+    border: none;
+
+}
+.modal-header{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+/* ============================= content==================================== */
+
+.content{
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: row;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: bisque;
+  border-radius: 5px ;
+  margin-bottom: 15px;
+}
+.content-left{
+    padding-top: 40px;
+}
+.content-right img{
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+}
+#content-add-list{
+    padding: 10px;
+    margin: auto;
+    width: 80vw;
+    background-color: rgb(235, 235, 240);
+    border-bottom: 2px solid blue;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+pre span{
+    font-size: 18px;
+}
+.content-top p{
+    padding-left: 50px;
+}
+.content-top span{
+    font-size: 20px;
+}
+.content-bottom{
+    font-size: 22px;
+    text-align: end;
+
+}
+.content-bottom i{
+    padding: 10px;
+}
+.content-bottom i:hover{
+    color:blue;
+}
+
+/*==============================Form css=======================================*/
+.login-container{
+    /* text-align: center; */
+    align-items:start;
+    width: 50vw;
+    margin: 100px auto;
+}
+.login-form{
+    width: 60%;
+    margin: 100px auto;
+    border-radius: 5px ;
+    padding: 30px;
+    background-color: bisque;
+}
+.form-item input{
+    width:100%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+.account{
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.login-body{
+    background-color: rgb(211, 201, 221);
+}
+.form-search{
+  text-align: end;
+  width: 500px;
+  margin-left: 100%;
+}
+.form-form{
+    text-align: end;  
+}
+
+/* =============================  faq question========================== */
+.faq-container{
+    width: 80vw;
+    margin: auto;
+}
+.faq{
+    background-color: bisque;
+}
+
+@media(max-width:900px){
+    .navigation{
+        width: 100vw;
+    }
+    .content{
+        display: block;
+    }
+    .content-left{
+        padding-top: 50px;
+    }
+    .content-right{
+        align-items: center;
+        text-align: center;
+    }
+    .content-right img{
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        
+    }
+}
